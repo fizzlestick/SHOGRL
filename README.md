@@ -1,4 +1,3 @@
-
            ______     __  __     ______     ______     ______     __ 
           /\  ___\   /\ \_\ \   /\  __ \   /\  ___\   /\  == \   /\ \ 
           \ \___  \  \ \  __ \  \ \ \/\ \  \ \ \__ \  \ \  __<   \ \ \____  
@@ -10,10 +9,9 @@
  ... VERSION 0.2 github release
 
 "what does this do?"....
-> Shogrl in the current version has three major functions to provide.
-> #1) Search on a string and get a total # of results from shodan DB.
-> #2) Search on a string and produce a CSV result file used for further imports
-> #3) Provide an IP Address and receive detailed information on host from Shodan DB
+> 1- Search on a string and get a total # of results from shodan DB.
+> 2- Search on a string and produce a CSV result file used for further imports
+> 3- Provide an IP Address and receive detailed information on host from Shodan DB
 
 CHANGELOG
 - v0.2 - GITHUB, and public release.. first public version
