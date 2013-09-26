@@ -1,15 +1,17 @@
-SHOGRL
-======
+==================
+     SHOGRL
+==================
+
 A shodan search engine front end built with python and unicorn meat
 
 "what does this do?"....
-> TEXT TEXT TEXT
+> TEXT COMING....
 
 CHANGELOG
-- v0.53 -
+- v0.2 - GITHUB, and public release.. first public version
 
 ISSUES
-- Report issues to TROLLSOHARD@REBELBAS.ES
+- TROLLSOHARD@REBELBAS.ES
 
 TODO
-- 
+- WIP....
