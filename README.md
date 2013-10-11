@@ -14,7 +14,8 @@
 > 3- Provide an IP Address and receive detailed information on host from Shodan DB
 
 CHANGELOG
-- v0.2 - GITHUB, and public release.. first public version
+- v0.2  - GITHUB, and public release.. first public version
+- v.021 - Cleaned up shohost() function to be easier to read 
 
 ISSUES
 - When providing a host instead of IP the script crashes
