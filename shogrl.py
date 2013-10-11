@@ -3,7 +3,7 @@
 #   ___  _   _  _____  ___  ____  __
 #  / __)( )_( )(  _  )/ __)(  _ \(  )
 #  \__ \ ) _ (  )(_)( ( (_-.)   / )(__
-#  (___/(_) (_)(_____)\___/(_)\_)(____) V0.2
+#  (___/(_) (_)(_____)\___/(_)\_)(____) V0.21
 # -some code borrowed from >> https://developers.shodan.io/index.html
 # -rest created/mixed up by FIZZLESTICK
 # -trollsohard[at]rebelbas.es
@@ -12,7 +12,7 @@
 #
 # [changelog]
 # 9/25/2013 v0.2 - written up for RC worth.. needs some IP/vs DNS handling
-# next
+# 10/11/2013 v0.21 - cleaned up host output a bit, banners, formatting
 #########################################################################
 
 import shodan
@@ -49,19 +49,20 @@ def shohost(crap):
     host = api.host(derpstring)
     try:
         print '----------------------------------------------------------------------'
-        print '[*] IP ADDRESS: ',host.get('ip')
-        print '[*] Operating System: ',host.get('os')
-        print '[*] Hostnames: ',host.get('hostnames')
-        print '[*] Country: ',host.get('country_code')
-        print '[*] Region: ',host.get('region_name')
-        print '[*] City: ',host.get('city')
-        print '[*] Latitude: ',host.get('latitude')
-        print '[*] Longitude: ',host.get('longitude')
+        print '[*] IP ADDRESS:\t\t\t\t',host.get('ip')
+        print '[*] Operating System:\t\t',host.get('os')
+        print '[*] Hostnames:\t\t\t\t',host.get('hostnames')
+        print '[*] Country:\t\t\t\t',host.get('country_code')
+        print '[*] Region:\t\t\t\t\t',host.get('region_name')
+        print '[*] City:\t\t\t\t\t',host.get('city')
+        print '[*] Latitude:\t\t\t\t',host.get('latitude')
+        print '[*] Longitude:\t\t\t\t',host.get('longitude')
         print '----------------------------------------------------------------------'
         for item in host['data']:
-            print '-- TIMESTAMP\t\t',item['timestamp']
-            print '-- PORT\t\t\t\t',item['port']
-            print '-- BANNER\t\t\t',item['banner'],
+            print '----------------------------------------------------------------------'
+            print '+--[ TimeStamp:\t\t\t',item['timestamp']
+            print '+--[ Port:\t\t\t\t',item['port']
+            print '+--[ Banner:\t\t\t',item['banner']
     except Exception, e:
         print '[ERROR:] %s' % e
 
@@ -93,7 +94,7 @@ print "/\  ___\   /\ \_\ \   /\  __ \   /\  ___\   /\  == \   /\ \ "
 print '\ \___  \  \ \  __ \  \ \ \/\ \  \ \ \__ \  \ \  __<   \ \ \____ '
 print ' \/\_____\  \ \_\ \_\  \ \_____\  \ \_____\  \ \_\ \_\  \ \_____\ '
 print '  \/_____/   \/_/\/_/   \/_____/   \/_____/   \/_/ /_/   \/_____/ '
-print ' ... a shodan search utility...:: PROTOTYPE v0.2 :: FIZZLE.. .   .    .        .'
+print ' ... a shodan search utility...:: PROTOTYPE v0.21 :: FIZZLE.. .   .    .        .'
 print '======================================================================'
 print '[FILTERS:] OS/PORT/GEO/HOSTNAME'
 print '[PREMIUM:] NET/CITY/COUNTRY/BEFORE/AFTER/LIMIT/PAGE'
